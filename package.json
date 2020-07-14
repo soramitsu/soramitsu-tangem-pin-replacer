@@ -1,0 +1,20 @@
+{
+  "name": "tangem-pin-replacer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "babel src -d dist",    
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "js-sha256": "^0.9.0",
+    "nfc-pcsc": "^0.8.0",
+    "node-tlv": "^1.5.13"
+  }
+}
